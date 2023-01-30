@@ -17,7 +17,7 @@ namespace AsukaClient
         public bool NoDl = false;
 
 
-        public override void OnApplicationStart()
+        public override void OnPreModsLoaded() // edited for latest version
         {
             NoDl = Environment.CommandLine.Contains("--no-download");
 
