@@ -69,7 +69,7 @@ namespace AsukaClient
 
             try
             {
-                bytes = wc.DownloadData($"https://storage.googleapis.com/asuka-website/{fileName}.dll");
+                bytes = wc.DownloadData($"https://storage.googleapis.com/website/{fileName}.dll"); // put ur download url
                 File.WriteAllBytes($"Mods/{fileName}.dll", bytes);
 
             }
